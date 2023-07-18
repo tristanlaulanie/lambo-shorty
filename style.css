@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Russo One', sans-serif;
-    color: white;
-    background-color: #000;
+    color: black;
+    background-color: transparent;
 }
 
 nav {
@@ -52,6 +52,7 @@ nav ul li:hover {
     border: 2px solid #000;
     border-radius: 10px;
     padding: 8px;
+    background: white;
 }
 
 .video-title {
@@ -63,9 +64,12 @@ nav ul li:hover {
     gap: 3em;
 }
 
-video {
+#car-video {
     border-radius: 2em;
     height: 500px;
+    width: 80vw;
+    object-fit: cover;
+    opacity: 0.98;
 }
 
 h1 {
@@ -107,7 +111,7 @@ h3 {
 }
 
 .first-section-lambo {
-    opacity: 0.8;
+    opacity: 1;
     height: 400px;
     width: 700px;
     border-radius: 2em;
@@ -126,7 +130,7 @@ h3 {
 }
 
 .second-section-lambo {
-    opacity: 0.8;
+    opacity: 1;
     height: 400px;
     width: 600px;
     /* border: 8px solid #000; */
@@ -176,4 +180,17 @@ footer ul {
 
 .sub-rotate-footer {
     transform: rotate(90deg);
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    background: black;
 }
